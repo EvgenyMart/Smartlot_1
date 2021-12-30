@@ -1,0 +1,113 @@
+a{
+    text-decoration: none;
+  }
+  
+  .container {
+      background-image: url("logos/green.jpeg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 650px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". ."
+        ". ."
+        "username password"
+        "login-button login-button";
+    }
+    
+    .username {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      justify-items: end;
+      align-items: stretch;
+      grid-template-areas:
+        "username-textbox";
+      grid-area: username;
+    }
+    
+    .username-textbox { grid-area: username-textbox; 
+      /* border: 1px red solid;  */
+      align-self: flex-end;
+    }
+    
+    .password {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      justify-items: start;
+      align-items: stretch;
+      grid-template-areas:
+        "password-textbox";
+      grid-area: password;
+    }
+    
+    .password-textbox { grid-area: password-textbox; 
+      /* border: 1px red solid;  */
+      align-self: flex-end;
+     }
+    
+    .login-button {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". login ."
+        ". . ."
+        ". Registration .";
+      grid-area: login-button;
+    }
+    
+    .login { grid-area: login;
+      /* border: 1px red solid;  */
+      text-align: center;
+    }
+    
+    #registration_section { 
+      grid-area: Registration;
+      display: flex;
+      justify-content: space-around;
+      /* border: 1px red solid; */
+    }
+    
+    #owner_registration{
+      display: inline-block;
+      /* border: 1px red solid; */
+    }
+  
+    #client_registration{
+      display: inline-block;
+      /* border: 1px red solid; */
+  
+    }
+  
+    #login_button{
+      width: 150px;
+      height: 50px;
+      font-family:'Times New Roman', Times, serif;
+      font-weight: bold;
+      color: white;
+      background-color: #114C15;
+      border-radius: 15px;
+    }
+  
+    #username_label{
+        color: cornsilk;
+    }
+  
+    #password_label{
+      /* border: 1px yellow solid; */
+      color: cornsilk;
+      justify-self: center;
+    }

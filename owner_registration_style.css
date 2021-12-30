@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#registration_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #F1EFEF;
+}
+
+#inner_registration_form{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
