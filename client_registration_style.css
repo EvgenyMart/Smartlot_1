@@ -4,14 +4,14 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-body{
-    background-color: #F1EFEF;
+body {
+  background-color: #f1efef;
 }
-#registration_area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 300px;
-    /* border: 1px red solid; */
+#registration_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  border: 1px red solid;
 }
